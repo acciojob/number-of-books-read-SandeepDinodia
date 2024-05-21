@@ -16,17 +16,25 @@ const library = [
   },
 ];
 
-const numberOfBooksRead(library) {
-  // write your code here
-	let count=0;
-	for(let i=0; i<library.length; i++){
-		if(library[i].readingStatus=== true){
-		count++;
-		}
-	}
-	return count;
-};
-
+// const numberOfBooksRead(library) {
+//   // write your code here
+// 	let count=0;
+// 	for(let i=0; i<library.length; i++){
+// 		if(library[i].readingStatus=== true){
+// 		count++;
+// 		}
+// 	}
+// 	return count;
+// };
+function numberOfBooksRead(library) {
+    let count = 0;
+    for (let i = 0; i < library.length; i++) {
+        if (library[i].readingStatus === true) {
+            count++;
+        }
+    }
+    return count;
+}
 // Do not change the code below
 
 alert(numberOfBooksRead());
